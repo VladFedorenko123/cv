@@ -1,0 +1,204 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E4E5E5;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+}
+
+main {
+    width: 65%;
+    padding: 50px;
+}
+
+aside {
+    width: 35%;
+}
+
+aside img {
+    width: 100%;
+    display: block;
+}
+
+.contact {
+    padding: 50px;
+    background-color: #2D2F31;
+}
+
+.contact h3 {
+    color: #FFFFFF;
+    font-family: "Poppins Semibold", Arial, sans-serif;
+}
+
+.contact h4 {
+    color: #FFFFFF;
+    margin-top: 20px;
+    font-family: "Poppins Regular", Arial, sans-serif;
+}
+
+.contact>p,
+section p {
+    color: #A9AAAB;
+    margin-top: 10px;
+    font-family: "Poppins Light", Arial, sans-serif;
+}
+
+.contact a {
+    color: #A9AAAB;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Poppins Light", Arial, sans-serif;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-top: 20px;
+}
+
+main h1 span {
+    font-weight: normal;
+    font-family: "Poppins Medium", Arial, sans-serif;
+}
+
+main div {
+    width: 180px;
+    padding: 5px;
+    font-family: "Montserrat Medium";
+    margin-top: 15px;
+    background-color: #EBEBEB;
+}
+
+main h3 {
+    font-family: "Proppins SemiBold";
+    margin-top: 20px;
+}
+
+main>p {
+    font-family: "Proppins Light";
+    margin-top: 20px;
+}
+
+main section.experience {
+    display: flex;
+}
+
+main section.experience>p {
+    color: #000000;
+    width: 50%;
+    display: flex;
+}
+
+main section.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+main section.skills>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main section.hobbies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+main section.hobbies>img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper {
+        max-width: 100%;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    .contact {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside,
+    main {
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+
+    aside {
+        order: 2;
+    }
+
+    aside img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        padding: 20px;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+
+    main section.experience {
+        flex-direction: column;
+    }
+
+    main section.experience>p {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    main div {
+        width: 100%;
+        text-align: center;
+    }
+
+    main section.skills,
+    main section.hobbies {
+        justify-content: center;
+    }
+}
